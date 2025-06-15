@@ -60,15 +60,7 @@ Use these prompts with GitHub Copilot to enhance and extend the project function
    - Add monitoring metrics
    - Create alert rules"
    ```
-
-2. **Backup Configuration**
-   ```
-   "Implement backup policies for:
-   - Storage account data
-   - Key vault secrets
-   - Configure retention policies"
-   ```
-
+   
 ### Documentation Improvements
 
 1. **Documentation Generation**
@@ -95,14 +87,6 @@ Use these prompts with GitHub Copilot to enhance and extend the project function
    - Resource tagging strategy
    - Budget alerts
    - Cost center allocation"
-   ```
-
-2. **Resource Optimization**
-   ```
-   "Implement auto-scaling rules for:
-   - Resource utilization
-   - Schedule-based scaling
-   - Cost optimization"
    ```
 
 ### Compliance and Security
