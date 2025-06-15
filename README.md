@@ -45,20 +45,7 @@ This project provides:
    cd azure\ CI\:CD\ pipeline
    ```
 
-2. **Prerequisites**
-   - Azure Subscription (ID: 5c995f79-6f18-411a-9f9c-b620cae67a7e)
-   - Azure CLI
-   - Terraform
-   - GitHub Account
-   - Git
-   - jq (for JSON parsing)
-
-3. **Required Permissions**
-   - Azure AD permissions to create service principals
-   - Subscription-level "Owner" or "User Access Administrator" role
-   - Permissions to create resource groups and storage accounts
-
-4. **Setup Steps**
+2. **Setup Steps**
    ```bash
    # Set up Azure Backend Storage
    cd terraform
