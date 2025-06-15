@@ -45,7 +45,7 @@ Key Features:
    /Create variables.tf and add the variables to variable.tf
 
 3. **Backend Configuration**
-   Write a script to deploy azure backend resources and set subscription = "5c995f79-6f18-411a-9f9c-b620cae67a7e" and location = "australiaeast"
+   Write a script to deploy azure backend resources and set subscription = "SubscriptionID" and location = "australiaeast"
 
 4. Run the backend script
    -> Set subscription = 
