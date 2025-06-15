@@ -66,17 +66,16 @@ Key Features:
 ### 5. Version Control and Deployment
 
 1. **Initialize Git Repository**
->>   cd "/Users/vanshika/Documents/azure CI:CD pipeline"
->>   git init
->>   git add .
->>   git commit -m "Initial commit with Terraform configuration"
+   git init
+   git add .
+   git commit -m "Initial commit with Terraform configuration" OR ask Copilot to write  a commit message
 
 2. **GitHub Integration**
->> git remote add origin <your-github-repo-url>
->> git push -u origin main
+   git remote add origin <your-github-repo-url>
+   git push -u origin main
 
 3. Test the GitHub Actions Workflow:
->> git push
+   git push
 
 4. **Deploy Infrastructure**
    ```bash
