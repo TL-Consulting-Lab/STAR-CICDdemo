@@ -9,8 +9,6 @@ Use these prompts with GitHub Copilot to enhance and extend the project function
    "Add an Azure Key Vault to store secrets in main.tf with these requirements:
    - Enable RBAC
    - Enable Soft Delete
-   - Add necessary access policies
-   - Tag with environment"
    ```
 
 2. **Enhance Security**
