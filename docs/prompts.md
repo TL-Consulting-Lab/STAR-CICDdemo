@@ -45,6 +45,8 @@ Key Features:
 1. **Provision Azure Infrastructure**
 ```
 ->  Provision Azure infrastructure (e.g., Resource Group, Storage Account) via GitHub Actions and Terraform.
+
+->  Ensure that workflow files are at .github/workflows/ at the root of your repository.
    ```
 2. **Variables Configuration**
 ```
