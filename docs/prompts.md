@@ -54,6 +54,10 @@ Key Features:
 ```
 ->  Write a script to deploy azure backend resources and set subscription = "SubscriptionID" and location = "australiaeast"
    ```
+4.**Modify the providers.tf**
+```
+->  Modify the backend configuration in providers.tf to use Azure AD authentication
+```
 4. **Run the backend script**
 ```
 ->  Set subscription = 
