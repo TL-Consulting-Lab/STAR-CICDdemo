@@ -18,13 +18,15 @@ Key Features:
 
 ### 1. Azure Authentication and Resource Management
 # Connect to Azure
+```
 @azure connect to azure
 -> az login
 
 # List Resource Groups
+```
 @azure show Resource Groups
 -> az group list --output table
-
+```
 # Show Running VMs
 ```
 @azure Show Virtual machines status = running
@@ -34,12 +36,14 @@ Key Features:
 
 #### Create Resources
 # Create Resource Group
+```
 @azure Create Resource Group "Test-GH" location = australia southeast
 ```
 
 ### 3. Terraform Configuration Steps
 
 1. **Provision Azure Infrastructure**
+```
 ->  Provision Azure infrastructure (e.g., Resource Group, Storage Account) via GitHub Actions and Terraform.
    ```
 2. **Variables Configuration**
