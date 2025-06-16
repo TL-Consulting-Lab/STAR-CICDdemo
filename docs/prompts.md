@@ -21,6 +21,7 @@ Key Features:
 ```
 @azure connect to azure
 -> az login
+```
 
 # List Resource Groups
 ```
@@ -47,28 +48,35 @@ Key Features:
 ->  Provision Azure infrastructure (e.g., Resource Group, Storage Account) via GitHub Actions and Terraform.
    ```
 2. **Variables Configuration**
+```
 ->  /Create variables.tf and add the variables to variable.tf
    ``` 
 3. **Backend Configuration**
+```
 ->  Write a script to deploy azure backend resources and set subscription = "SubscriptionID" and location = "australiaeast"
    ```
 4. **Run the backend script**
+```
 ->  Set subscription = 
 ->  Set location = "australiaeast"
    ```
 5. **Service Principal Setup**
+```
 ->  Write a script to create service principal
 ->  Run the service principal creation script
    ```
 ### 4. Infrastructure Development
 
 1. Auto Completion, 
-start by writing # Virtual Machine and when the ghost text appears, select TAB to accept to ESC  to reject
+```
+Start by writing # Virtual Machine and when the ghost text appears, select TAB to accept to ESC  to reject
    ```
 2. Use Agent Mode, 
+```
 Create Virtual Network (It probably will generate the dependency related resources like VNet, a subnet, and a network interface for your VM). If not ask Copilot!
    ```
 3. Ask Mode, 
+```
 Do I need to make modifications to Virtual machine resource block with Network information? OR Explain how network interface id is generated?
    ```
 ### 5. Version Control and Deployment
