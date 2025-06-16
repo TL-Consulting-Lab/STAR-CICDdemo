@@ -26,6 +26,7 @@ Key Features:
 -> az group list --output table
 
 # Show Running VMs
+```
 @azure Show Virtual machines status = running
 -> az vm list --show-details --output table
 ```
