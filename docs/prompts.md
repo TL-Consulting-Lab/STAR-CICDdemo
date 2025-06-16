@@ -35,7 +35,6 @@ Key Features:
 ```
 ### 2. Infrastructure Setup
 
-#### Create Resources
 # Create Resource Group
 ```
 @azure Create Resource Group "Test-GH" location = australia southeast
