@@ -62,7 +62,7 @@ Key Features:
 ```
 4. **Run the backend script**
 ```
-->  Set subscription = 
+->  Set subscription = "SubscriptionID"
 ->  Set location = "australiaeast"
    ```
 5. **Service Principal Setup**
@@ -120,7 +120,7 @@ Do I need to make modifications to Virtual machine resource block with Network i
 ### 7. Cleanup
 
 1. **Destroy Infrastructure**
-   ```bash
+   ```
    terraform destroy
    ```
 
