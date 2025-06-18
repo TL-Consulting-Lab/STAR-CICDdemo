@@ -32,10 +32,52 @@ This project provides:
   - Microsoft.Resources
   - Microsoft.Authorization
 
-### Security Requirements
-- Access to GitHub repository settings
-- Ability to create and manage GitHub secrets
-- Understanding of Azure RBAC and service principals
+## Initial Setup
+
+### Account Configuration
+1. **GitHub Account Setup**
+   ```bash
+   # Configure Git with your credentials
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   
+   # Generate and add SSH key (optional but recommended)
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   # Add the SSH key to your GitHub account through GitHub settings
+   ```
+
+2. **Azure Account Setup**
+   ```bash
+   # Install Azure CLI (if not already installed)
+   
+   # Login to Azure
+   az login
+   
+   # Set your subscription
+   az account set --subscription 
+   ```
+
+### Required Extensions and Tools Installation
+1. **VS Code Extensions**
+   - Install HashiCorp Terraform Extension
+   - Install Azure Tools Extension Pack
+   - Install GitHub Actions Extension
+
+2. **Install Terraform**
+   ```bash
+   # Install hashicorp/tap/terraform
+   
+   # Verify installation
+   terraform version
+   ```
+
+3. **Install jq**
+   ```bash
+   # Install jq
+   
+   # Verify installation
+   jq --version
+   ```
 
 ## Getting Started
 
@@ -45,26 +87,13 @@ This project provides:
    cd azure\ CI\:CD\ pipeline
    ```
 
-2. **Prerequisites**
-   - Azure Subscription (ID: 5c995f79-6f18-411a-9f9c-b620cae67a7e)
-   - Azure CLI
-   - Terraform
-   - GitHub Account
-   - Git
-   - jq (for JSON parsing)
-
-3. **Required Permissions**
-   - Azure AD permissions to create service principals
-   - Subscription-level "Owner" or "User Access Administrator" role
-   - Permissions to create resource groups and storage accounts
-
 4. **Setup Steps**
    ```bash
-   # Set up Azure Backend Storage
+   # Set up Azure Backend Storage - Run only once
    cd terraform
    ./setup-backend.sh
 
-   # Create Service Principal
+   # Create Service Principal - Run only once
    ./create-service-principal.sh
    ```
 
