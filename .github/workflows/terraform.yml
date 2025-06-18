@@ -71,7 +71,7 @@ jobs:
       run: |
         # Attempt to acquire lock and apply changes
         for i in {1..3}; do
-          if terraform apply -auto-approve; then
+          if terraform apply -auto-approve -var-file="terraform.tfvars"; then
             echo "Terraform apply succeeded"
             break
           else
