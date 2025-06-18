@@ -42,21 +42,6 @@ jobs:
       with:
         terraform_version: 1.0.0
 
-    - name: Create terraform.tfvars
-      run: |
-        cat > terraform.tfvars << EOL
-        resource_group_name = "tf-demo-rg"
-        location           = "australiaeast"
-        environment        = "dev"
-        EOL
-
-    - name: Verify Terraform Files
-      run: |
-        pwd
-        ls -la
-        echo "Content of terraform.tfvars:"
-        cat terraform.tfvars
-
     - name: Terraform Init
       run: |
         terraform init \
@@ -73,7 +58,7 @@ jobs:
 
     - name: Terraform Plan
       if: github.event_name == 'pull_request'
-      run: terraform plan -no-color
+      run: terraform plan -no-color -var="resource_group_name=tf-demo-rg" -var="location=australiaeast" -var="environment=dev"
       continue-on-error: true
 
     - name: Force unlock state (if locked)
@@ -86,7 +71,10 @@ jobs:
       run: |
         # Attempt to acquire lock and apply changes
         for i in {1..3}; do
-          if terraform apply -auto-approve -var-file="terraform.tfvars"; then
+          if terraform apply -auto-approve \
+            -var="resource_group_name=tf-demo-rg" \
+            -var="location=australiaeast" \
+            -var="environment=dev"; then
             echo "Terraform apply succeeded"
             break
           else
