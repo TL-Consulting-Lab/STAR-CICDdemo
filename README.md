@@ -21,7 +21,7 @@ This project provides:
 - GitHub Account
 
 ### Azure Requirements
-- Active Azure Subscription (ID: 5c995f79-6f18-411a-9f9c-b620cae67a7e)
+- Active Azure Subscription 
 - Required Azure Permissions:
   - "User Access Administrator" or "Owner" role at subscription level
   - Permission to create Azure AD applications
@@ -64,7 +64,7 @@ This project provides:
    - Install GitHub Actions Extension
 
 2. **Install Terraform**
-   ```bash
+   ```
    # Install hashicorp/tap/terraform
    
    # Verify installation
@@ -72,28 +72,25 @@ This project provides:
    ```
 
 3. **Install jq**
-   ```bash
+   ```
    # Install jq
    
    # Verify installation
    jq --version
-   ```
 
 ## Getting Started
 
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd azure\ CI\:CD\ pipeline
    ```
 
-4. **Setup Steps**
-   ```bash
+2. **Setup Steps**
+   ```
    # Set up Azure Backend Storage - Run only once
    cd terraform
-   ./setup-backend.sh
 
-   # Create Service Principal - Run only once
+3. # Create Service Principal - Run only once
    ./create-service-principal.sh
    ```
 
