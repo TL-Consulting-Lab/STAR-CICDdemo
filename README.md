@@ -64,7 +64,7 @@ This project provides:
    - Install GitHub Actions Extension
 
 2. **Install Terraform**
-   ```bash
+   ```
    # Install hashicorp/tap/terraform
    
    # Verify installation
@@ -72,12 +72,11 @@ This project provides:
    ```
 
 3. **Install jq**
-   ```bash
+   ```
    # Install jq
    
    # Verify installation
    jq --version
-  
 
 ## Getting Started
 
@@ -87,11 +86,11 @@ This project provides:
    ```
 
 2. **Setup Steps**
-   ```bash
-   # Set up Azure Backend Storage
-   ./setup-backend.sh
+   ```
+   # Set up Azure Backend Storage - Run only once
+   cd terraform
 
-   # Create Service Principal
+3. # Create Service Principal - Run only once
    ./create-service-principal.sh
    ```
 
