@@ -18,5 +18,5 @@ variable "environment" {
 variable "admin_password" {
   description = "Password for the Virtual Machine administrator account"
   type        = string
-  sensitive   = true  # Marks this variable as sensitive to prevent it from showing in logs
+  sensitive   = true # Marks this variable as sensitive to prevent it from showing in logs
 }

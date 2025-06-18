@@ -64,18 +64,18 @@ resource "azurerm_storage_account" "main" {
 
 // Create a Virtual Machine
 resource "azurerm_linux_virtual_machine" "main" {
-  name                = "${var.resource_group_name}-vm"
-  resource_group_name = azurerm_resource_group.main.name
-  location            = azurerm_resource_group.main.location
-  size                = "Standard_B1s"
-  admin_username      = "adminuser"
-  admin_password      = var.admin_password  
-  network_interface_ids = [azurerm_network_interface.main.id] 
+  name                  = "${var.resource_group_name}-vm"
+  resource_group_name   = azurerm_resource_group.main.name
+  location              = azurerm_resource_group.main.location
+  size                  = "Standard_B1s"
+  admin_username        = "adminuser"
+  admin_password        = var.admin_password
+  network_interface_ids = [azurerm_network_interface.main.id]
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
-  source_image_reference {    
+  source_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
     sku       = "22_04-lts"
@@ -85,7 +85,7 @@ resource "azurerm_linux_virtual_machine" "main" {
     Environment = var.environment
     ManagedBy   = "Terraform"
   }
-}           
+}
 
 # Outputs
 output "resource_group_id" {
