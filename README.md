@@ -162,6 +162,8 @@ resources
 
 - [Detailed Setup Instructions](terraform/Demo_instructions.md)
 - [Step-by-Step Guide](terraform/prompts.md)
+- [Component Structure](docs/component_structure.md)
+- [Workflow Diagram](docs/workflow_diagram.md)
 - [Terraform Documentation](https://www.terraform.io/docs)
 - [Azure Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
