@@ -11,6 +11,8 @@ This project provides:
 - Infrastructure components including resource groups and storage accounts
 - Complete setup scripts for backend and service principal
 
+For a detailed view of the deployment workflow, see our [Workflow Diagram](docs/workflow_diagram.md).
+
 ## Prerequisites
 
 ### Required Tools
@@ -109,7 +111,10 @@ terraform/
 
 ## Configuration
 
-### GitHub Secrets Required
+resources
+| where type =~ 'microsoft.web/sites' and kind contains 'functionapp'
+| where name == 'vanshika-function-app-3pxfkuoee4uo6'
+| project name, properties.state### GitHub Secrets Required
 - `AZURE_SUBSCRIPTION_ID`
 - `AZURE_TENANT_ID`
 - `AZURE_CLIENT_ID`
